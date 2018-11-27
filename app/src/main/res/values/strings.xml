@@ -1,5 +1,7 @@
 <resources>
     <string name="app_name">DinnerDecider</string>
-    <string name="selectFoodText">Chinese</string>
+    <string name="select_food_text">Chinese</string>
+    <string name="food_text_empty">Insert the type of the food!</string>
+    <string name="add_food">ADD FOOD</string>
 
 </resources>

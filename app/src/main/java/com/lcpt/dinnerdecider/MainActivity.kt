@@ -7,8 +7,8 @@ import java.util.*
 
 class MainActivity : AppCompatActivity() {
 
-    val foodList = arrayListOf("Chinese", "Hamburger", "Mexican", "Pizza", "Thai", "Brazilian", "Mc Donalds", "Japanese","Greek","Lebanese",
-            "Italian","Indian","Vegetarian")
+    val foodList = arrayListOf("Chinese", "Hamburger", "Mexican", "Pizza", "Thai", "Brazilian", "Mc Donalds", "Japanese", "Greek", "Lebanese",
+            "Italian", "Indian", "Vegetarian")
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -21,9 +21,14 @@ class MainActivity : AppCompatActivity() {
         }
         addFoodBt.setOnClickListener {
             val newFood = addFoodTxt.text.toString()
-            foodList.add(newFood)
-            addFoodTxt.text.clear()
-            println(foodList)
+            if (newFood.isEmpty()) {
+                addFoodTxt.hint = getString(R.string.food_text_empty)
+            } else {
+                foodList.add(newFood)
+                addFoodTxt.text.clear()
+                println(foodList)
+            }
         }
+
     }
 }
