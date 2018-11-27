@@ -31,7 +31,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/dd_logo" />
+        app:srcCompat="@drawable/dd_logo"
+        android:contentDescription="@string/add_food" />
 
     <Button
         android:id="@+id/decideBt"
@@ -40,7 +41,7 @@
         android:layout_height="wrap_content"
         android:background="@color/colorPrimary"
         android:fontFamily="@font/muli_bold"
-        android:text="Decide!"
+        android:text="@string/decide"
         android:textColor="@android:color/background_light"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -53,7 +54,7 @@
         android:layout_margin="24dp"
         android:ems="10"
         android:fontFamily="@font/muli_bold"
-        android:hint="Add new food..."
+        android:hint="@string/add_new_food"
         android:inputType="textPersonName"
         app:layout_constraintBottom_toTopOf="@+id/addFoodBt"
         app:layout_constraintEnd_toEndOf="parent"

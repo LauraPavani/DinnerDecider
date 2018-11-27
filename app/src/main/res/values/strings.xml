@@ -3,5 +3,8 @@
     <string name="select_food_text">Chinese</string>
     <string name="food_text_empty">Insert the type of the food!</string>
     <string name="add_food">ADD FOOD</string>
+    <string name="add_new_food">Add new food…</string>
+    <string name="decide">Decide!</string>
+
 
 </resources>
